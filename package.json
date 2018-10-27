@@ -1,0 +1,30 @@
+{
+  "name": "scraper-app",
+  "version": "1.0.0",
+  "description": "An app that lets users leave comments on the most popular news scrapped from www.theonion.com.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/REstrella99"
+  },
+  "author": "Rafael Estrella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/REstrella99"
+  },
+  "homepage": "https://github.com/REstrella99/News-Scraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.17.2",
+    "cheerio": "^0.22.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "moment": "^2.18.1",
+    "mongoose": "^4.13.17",
+    "request": "^2.81.0"
+  }
+}

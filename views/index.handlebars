@@ -1,0 +1,51 @@
+
+<header class="text-center">
+  <span id="main-header">
+    <img src="assets/images/fcc-logo.png" alt="freecodecamp" id="fcc-img">
+    <h1 id="scraper">Scraper</h1>
+  </span>
+</header>
+
+
+<div class="text-center" id="scrape-div"> 
+  <form action="/api/scrape" method="GET" ">
+    <button type="submit" class="btn btn-lg" id="scrape-button"><img id="scraper-button-img" src="assets/images/cursor.png" alt="scraper">Update Articles</button></a>
+  </form>
+</div>
+
+<div class="container">
+  
+  <div class="panel-group" id="accordion">
+    
+    {{#each article}}
+     
+      <div class="panel panel-default">
+        <div class="panel-heading article-panel">
+          <h4 class="panel-title">
+            <a href={{this.link}} target="_blank"><h3>{{this.title}}</h3></a>
+            <span>By {{this.author}}  |  {{formatDate this.date}}</span>
+          </h4>
+          <br>
+          <a data-toggle="collapse" data-parent="#accordion" href='#{{this._id}}'><button class="btn btn-info">Comments</button></a>
+        </div>
+       
+        <div id={{this._id}} class="panel-collapse collapse">
+          <div class="panel-body">                      
+            {{> comments}}
+          </div>
+
+        </div>
+      </div>  
+     
+    {{/each}}
+
+    </div>
+   
+  
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy;Rafael Estrella | <a href="https://github.com/REstrella99/News-Scraper">GitHub Repo</a></p>
+    </div>
+</footer>
