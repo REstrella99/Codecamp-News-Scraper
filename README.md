@@ -6,9 +6,6 @@
 * [Node.js](https://nodejs.org) - JavaScript runtime built on Chrome's V8 JavaScript engine.
 * [MongoDB](https://www.mongodb.com/) - NoSQL Document Database.
 
-###### NPM Packages
-
-
 
 ## Author
 
